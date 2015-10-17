@@ -2,10 +2,13 @@ angular.module('propGreen.categories', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/categories', {
-    templateUrl: 'scripts/categories/categories.html',
+    templateUrl: 'javascript/categories/categories.html',
     controller: 'CategoriesController'
   });
 }])
 
-.controller('CategoriesController', function() {
-});
+.controller('CategoriesController', ['$scope', function($scope) {
+  $scope.categories = [
+    'category1', 'category2'
+  ];
+}]);
