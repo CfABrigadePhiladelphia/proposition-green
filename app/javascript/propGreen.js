@@ -4,7 +4,7 @@ angular.module('propGreen', ['ngRoute', 'propGreen.categories'])
   $routeProvider.otherwise({
     redirectTo: '/'
   }).when('/', {
-    templateUrl: 'scripts/categories/categories.html',
+    templateUrl: 'javascript/categories/categories.html',
     controller: 'CategoriesController'
   });
 }]);
