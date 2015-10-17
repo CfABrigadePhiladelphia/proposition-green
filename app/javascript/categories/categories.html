@@ -1,5 +1,15 @@
 <div>
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 category-item" ng-repeat="category in categories">{{category}}</div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 category-item" ng-repeat="category in categories">
+      <img class="category-img" ng-src="{{category.img}}">
+      <div class="category-content">
+        <div class="category-name">
+          {{category.name}}
+        </div>
+        <div class="category-description">
+          {{category.desc}}
+        </div>
+      </div>
+    </div>
   </div>
 </div>

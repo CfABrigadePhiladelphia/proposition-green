@@ -9,10 +9,40 @@ angular.module('propGreen.categories', ['ngRoute'])
 
 .controller('CategoriesController', ['$scope', function($scope) {
   $scope.categories = [
-    'category1',
-    'category2',
-    'category3',
-    'category4',
-    'category5'
+    {
+      name: 'category1',
+      img: 'images/category.png',
+      desc: 'Lorem espom salt'
+    },
+    {
+      name: 'category2',
+      img: 'images/category.png',
+      desc: 'Lorem espom salt'
+    },
+    {
+      name: 'category3',
+      img: 'images/category.png',
+      desc: 'Lorem espom salt'
+    },
+    {
+      name: 'category4',
+      img: 'images/category.png',
+      desc: 'Lorem espom salt'
+    },
+    {
+      name: 'category5',
+      img: 'images/category.png',
+      desc: 'Lorem espom salt'
+    },
+    {
+      name: 'category6',
+      img: 'images/category.png',
+      desc: 'Lorem espom salt'
+    },
+    {
+      name: 'category7',
+      img: 'images/category.png',
+      desc: 'Lorem espom salt'
+    }
   ];
 }]);

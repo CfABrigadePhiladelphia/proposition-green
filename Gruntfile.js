@@ -95,6 +95,12 @@ module.exports = function(grunt) {
     html: {
       files: ['<%= path.src %>/index.html', '<%= path.src_scripts %>/**/*.html'],
       tasks: ['build:html', 'install']
+    },
+
+    // Images
+    images: {
+      files: ['<%= path.src_images %>/**/*.png'],
+      tasks: ['copy:images', 'install']
     }
   };
 
