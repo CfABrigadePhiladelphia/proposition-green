@@ -8,20 +8,22 @@ module.exports = function(grunt) {
   config.path = {
     // Code
     src: 'app',
-    src_scripts: '<%= path.src %>/scripts',
+    src_scripts: '<%= path.src %>/javascript',
     src_images: '<%= path.src %>/images',
-    src_styles: '<%= path.src %>/styles',
+    src_styles: '<%= path.src %>/css',
 
     // External Code
     vendor: 'vendor',
-    vendor_scripts: '<%= path.vendor %>/scripts',
-    vendor_styles: '<%= path.vendor %>/styles',
+    vendor_scripts: '<%= path.vendor %>/javascript',
+    vendor_styles: '<%= path.vendor %>/css',
     vendor_fonts: '<%= path.vendor %>/fonts',
 
     // Dev Server
     public: 'public',
-    public_scripts: '<%= path.public %>/scripts',
-    public_images: '<%= path.public %>/images'
+    public_scripts: '<%= path.public %>/javascript',
+    public_styles: '<%= path.public %>/css',
+    public_images: '<%= path.public %>/images',
+    public_fonts: '<%= path.public %>/fonts'
   };
 
 
