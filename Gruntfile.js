@@ -87,7 +87,7 @@ module.exports = function(grunt) {
 
     // Styles
     styles: {
-      files: ['<%= path.vendor_styles %>/*.css', '<%= path.src_style %>/*.css'],
+      files: ['<%= path.vendor_styles %>/*.css', '<%= path.src_styles %>/*.css'],
       tasks: ['build:styles']
     },
 

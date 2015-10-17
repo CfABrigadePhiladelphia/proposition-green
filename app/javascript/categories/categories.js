@@ -9,6 +9,10 @@ angular.module('propGreen.categories', ['ngRoute'])
 
 .controller('CategoriesController', ['$scope', function($scope) {
   $scope.categories = [
-    'category1', 'category2'
+    'category1',
+    'category2',
+    'category3',
+    'category4',
+    'category5'
   ];
 }]);
