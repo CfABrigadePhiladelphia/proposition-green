@@ -4,6 +4,9 @@ angular.module('propGreen.categories', ['ngRoute'])
   $routeProvider.when('/categories', {
     templateUrl: 'javascript/categories/categories.html',
     controller: 'CategoriesController'
+  }).when('/categories/:category', {
+    templateUrl: 'javascript/categories/category.html',
+    controller: 'CategoryController'
   });
 }])
 
