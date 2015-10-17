@@ -1,6 +1,7 @@
 angular.module('propGreen.categories')
 
 .controller('CategoryController',
-['$routeParams', function($routeParams) {
-  console.log('Category:', $routeParams.category);
+['$routeParams', 'CategoriesService',
+function($routeParams, service) {
+  console.log('Category:', service.category($routeParams.category));
 }]);
