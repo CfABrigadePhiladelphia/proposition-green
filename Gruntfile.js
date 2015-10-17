@@ -87,7 +87,7 @@ module.exports = function(grunt) {
 
     // Styles
     styles: {
-      files: ['<%= path.vendor_styles %>/*.css', '<%= path.src_style %>/*.css'],
+      files: ['<%= path.vendor_styles %>/*.css', '<%= path.src_styles %>/*.css'],
       tasks: ['build:styles']
     },
 
@@ -95,6 +95,12 @@ module.exports = function(grunt) {
     html: {
       files: ['<%= path.src %>/index.html', '<%= path.src_scripts %>/**/*.html'],
       tasks: ['build:html', 'install']
+    },
+
+    // Images
+    images: {
+      files: ['<%= path.src_images %>/**/*.png'],
+      tasks: ['copy:images', 'install']
     }
   };
 
@@ -186,7 +192,7 @@ module.exports = function(grunt) {
     files: [{
       expand: true,
       cwd: '<%= path.src_scripts %>',
-      src: ['*.js', '**.js'],
+      src: ['*.js', '**.js', '**/*.js'],
       dest: '<%= path.public_scripts %>'
     }]
   };
