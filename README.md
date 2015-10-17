@@ -1,4 +1,4 @@
-# Proposition Green
+# PropositionGreen
 
 A web-platform for Philly to propose and vote on sustainability projects.
 
