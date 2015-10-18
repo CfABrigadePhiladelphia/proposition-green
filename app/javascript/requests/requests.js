@@ -1,4 +1,11 @@
-angular.module('propGreen.requests', [])
+angular.module('propGreen.requests', ['ngRoute'])
+
+.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/requests/:request', {
+    templateUrl: 'javascript/requests/request.html',
+    controller: 'RequestController'
+  });
+}])
 
 .directive('requests', function() {
   return {
