@@ -1,15 +1,25 @@
 <topnav></topnav>
 
-<form>
-  <input type="text" ng-model="request.title">
-  <input type="text" ng-model="request.desc">
-  <div ng-repeat="need in request.needs">
-    {{need}}
-    <button ng-click="removeNeed($index)">Remove</button>
-  </div>
-  <div>
-    <input type="text" ng-model="newNeed">
-    <button ng-click="addNeed()">Add Need</button>
+<form class="newRequest">
+  <h3>Make a new request, it just takes a sec!</h3>
+  <div class="newReqTitle">
+    <p>Title:</p>
+    <input type="text" ng-model="request.title">
+    </div>
+    <div class="newReqDesc">
+    <p>Description:</p>
+    <input type="text" ng-model="request.desc">
+    </div>
+    <div class="newReqNeeds">
+    <p>Needs:</p>
+    <div class="addedNeeds" ng-repeat="need in request.needs">
+      {{need}}
+      <button ng-click="removeNeed($index)">Remove</button>
+    </div>
+    <div>
+      <input type="text" ng-model="newNeed">
+      <button ng-click="addNeed()">Add Need</button>
+    </div>
   </div>
   <button ng-click="addRequest()">Add Request</button>
 </form>
