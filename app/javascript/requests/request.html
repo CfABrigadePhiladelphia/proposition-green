@@ -1,11 +1,15 @@
 <topnav></topnav>
 
-<div>
-  {{request.title}}
-</div>
-<div>
-  {{request.desc}}
-</div>
-<div ng-repeat="need in request.needs">
-  {{need}}
+<div class="request">
+  <div>
+    {{request.title}}
+  </div>
+
+  <div>
+    {{request.desc}}
+  </div>
+
+  <div ng-repeat="need in request.needs">
+    {{need}}
+  </div>
 </div>

@@ -1,0 +1,9 @@
+.request {
+  margin: 0 10%;
+  border: solid black 5px;
+  border-radius: 5px;
+
+  width: 80%;
+
+  text-align: center;
+}
