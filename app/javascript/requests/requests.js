@@ -6,7 +6,18 @@ angular.module('propGreen.requests', [])
       var deferred = $q.defer();
 
       console.log('Getting requests for category:', category_key);
-      deferred.resolve(['request1', 'request2']);
+      deferred.resolve([
+        {
+          title: 'Clean park',
+          desc: 'Halp',
+          needs: ['shovel', 'trash bags']
+        },
+        {
+          title: 'Shut down Comcast',
+          desc: 'They are evil',
+          needs: ['free internet']
+        }
+      ]);
 
       return deferred.promise;
     }
