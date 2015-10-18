@@ -1,7 +1,10 @@
 angular.module('propGreen.requests', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/requests/:request', {
+  $routeProvider.when('/requests/new', {
+    templateUrl: 'javascript/requests/new.html',
+    controller: 'RequestController'
+  }).when('/requests/:request', {
     templateUrl: 'javascript/requests/request.html',
     controller: 'RequestController'
   });

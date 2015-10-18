@@ -1,0 +1,13 @@
+<form>
+  <input type="text" ng-model="request.title">
+  <input type="text" ng-model="request.desc">
+  <div ng-repeat="need in request.needs">
+    {{need}}
+    <button ng-click="removeNeed($index)">Remove</button>
+  </div>
+  <div>
+    <input type="text" ng-model="newNeed">
+    <button ng-click="addNeed()">Add Need</button>
+  </div>
+  <button ng-click="addRequest()">Add Request</button>
+</form>

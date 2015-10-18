@@ -10,4 +10,8 @@ function($location, $scope, service) {
   $scope.openRequest = function(request) {
     $location.path('/requests/' + request.key);
   };
+
+  $scope.newRequest = function() {
+    $location.path('/requests/new');
+  };
 }]);

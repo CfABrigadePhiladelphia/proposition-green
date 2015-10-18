@@ -37,6 +37,10 @@ angular.module('propGreen.requests')
       }
 
       return deferred.promise;
+    },
+
+    addRequest: function(request) {
+      requests.push(request);
     }
   };
 }]);
