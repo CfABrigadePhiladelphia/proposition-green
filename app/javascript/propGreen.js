@@ -1,4 +1,6 @@
-angular.module('propGreen', ['ngRoute', 'propGreen.categories'])
+angular.module('propGreen', [
+  'ngRoute', 'propGreen.categories', 'propGreen.topnav'
+])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({
