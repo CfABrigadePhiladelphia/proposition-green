@@ -1,4 +1,4 @@
-angular.module('propGreen.categories', ['ngRoute'])
+angular.module('propGreen.categories', ['ngRoute', 'propGreen.requests'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/categories', {

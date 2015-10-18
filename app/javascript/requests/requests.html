@@ -1,0 +1,29 @@
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>
+        Title
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Needs
+      </th>
+    </tr>
+  </thead>
+
+  <tr ng-repeat="request in requests">
+    <td>
+      {{request.title}}
+    </td>
+    <td>
+      {{request.desc}}
+    </td>
+    <td>
+      <div class="request-need" ng-repeat="need in request.needs">
+        {{need}}
+      </div>
+    </td>
+  </tr>
+</table>
