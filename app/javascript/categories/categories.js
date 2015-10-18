@@ -12,45 +12,38 @@ angular.module('propGreen.categories', ['ngRoute', 'propGreen.requests'])
 
 .value('categories', [
   {
+    name: 'Emergency Preparedness',
+    key: 'emergency',
+    desc: 'Lorem espom salt'
+  },
+  {
     name: 'Food',
     key: 'food',
-    img: 'images/category.png',
     desc: 'Lorem espom salt'
   },
   {
     name: 'Water',
     key: 'water',
-    img: 'images/category.png',
     desc: 'Lorem espom salt'
   },
   {
     name: 'Air',
     key: 'air',
-    img: 'images/category.png',
     desc: 'Lorem espom salt'
   },
   {
     name: 'Energy',
     key: 'energy',
-    img: 'images/category.png',
-    desc: 'Lorem espom salt'
-  },
-  {
-    name: 'Emergency Preparedness',
-    key: 'emergency',
-    img: 'images/category.png',
     desc: 'Lorem espom salt'
   },
   {
     name: 'Population Displacement',
     key: 'population',
-    img: 'images/category.png',
     desc: 'Lorem espom salt'
   },
   {
     name: 'Habitat Impact',
     key: 'habitat',
-    img: 'images/category.png',
     desc: 'Lorem espom salt'
   }
 ]);
