@@ -5,5 +5,19 @@
 
   width: 80%;
 
+  color: white;
+  background: #00A7FF;
   text-align: center;
+}
+
+.request-title {
+  height: 40px;
+
+  border-bottom: solid black 5px;
+}
+
+.request-desc {
+  padding: 20px;
+
+  border-bottom: solid black 5px;
 }
