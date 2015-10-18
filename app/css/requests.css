@@ -1,23 +1,23 @@
 .request {
   margin: 0 10%;
-  border: solid black 5px;
+  border: solid green 5px;
   border-radius: 5px;
 
   width: 80%;
 
-  color: white;
-  background: #00A7FF;
+  color: green;
+  background: white;
   text-align: center;
 }
 
 .request-title {
   height: 40px;
 
-  border-bottom: solid black 5px;
+  border-bottom: solid green 5px;
 }
 
 .request-desc {
   padding: 20px;
 
-  border-bottom: solid black 5px;
+  border-bottom: solid green 5px;
 }
