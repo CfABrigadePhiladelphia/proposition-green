@@ -4,45 +4,53 @@ angular.module('propGreen.categories', ['ngRoute'])
   $routeProvider.when('/categories', {
     templateUrl: 'javascript/categories/categories.html',
     controller: 'CategoriesController'
+  }).when('/categories/:category', {
+    templateUrl: 'javascript/categories/category.html',
+    controller: 'CategoryController'
   });
 }])
 
-.controller('CategoriesController', ['$scope', function($scope) {
-  $scope.categories = [
-    {
-      name: 'Food',
-      img: 'images/category.png',
-      desc: 'Lorem espom salt'
-    },
-    {
-      name: 'Water',
-      img: 'images/category.png',
-      desc: 'Lorem espom salt'
-    },
-    {
-      name: 'Air',
-      img: 'images/category.png',
-      desc: 'Lorem espom salt'
-    },
-    {
-      name: 'Energy',
-      img: 'images/category.png',
-      desc: 'Lorem espom salt'
-    },
-    {
-      name: 'Emergency Preparedness',
-      img: 'images/category.png',
-      desc: 'Lorem espom salt'
-    },
-    {
-      name: 'Population Displacement',
-      img: 'images/category.png',
-      desc: 'Lorem espom salt'
-    },
-    {
-      name: 'Habitat Impact',
-      img: 'images/category.png',
-      desc: 'Lorem espom salt'
-    }
-  ];
-}]);
+.value('categories', [
+  {
+    name: 'Food',
+    key: 'food',
+    img: 'images/category.png',
+    desc: 'Lorem espom salt'
+  },
+  {
+    name: 'Water',
+    key: 'water',
+    img: 'images/category.png',
+    desc: 'Lorem espom salt'
+  },
+  {
+    name: 'Air',
+    key: 'air',
+    img: 'images/category.png',
+    desc: 'Lorem espom salt'
+  },
+  {
+    name: 'Energy',
+    key: 'energy',
+    img: 'images/category.png',
+    desc: 'Lorem espom salt'
+  },
+  {
+    name: 'Emergency Preparedness',
+    key: 'emergency',
+    img: 'images/category.png',
+    desc: 'Lorem espom salt'
+  },
+  {
+    name: 'Population Displacement',
+    key: 'population',
+    img: 'images/category.png',
+    desc: 'Lorem espom salt'
+  },
+  {
+    name: 'Habitat Impact',
+    key: 'habitat',
+    img: 'images/category.png',
+    desc: 'Lorem espom salt'
+  }
+]);
