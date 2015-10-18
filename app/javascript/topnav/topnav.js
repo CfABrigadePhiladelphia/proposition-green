@@ -12,8 +12,8 @@ angular.module('propGreen.topnav', [])
 ['$location', '$scope', function($location, $scope) {
   $scope.links = [
     {
-      text: 'Link',
-      link: 'link'
+      text: 'About PropositionGreen',
+      link: '/about'
     }
   ];
 

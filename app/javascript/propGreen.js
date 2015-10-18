@@ -8,5 +8,8 @@ angular.module('propGreen', [
   }).when('/', {
     templateUrl: 'javascript/categories/categories.html',
     controller: 'CategoriesController'
+  }).when('/about', {
+    templateUrl: 'javascript/about/about.html',
   });
 }]);
+
