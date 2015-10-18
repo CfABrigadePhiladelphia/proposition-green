@@ -31,3 +31,17 @@
   font-size: 20px;
   color: white;
 }
+
+.category-details {
+  margin: 20px 10%;
+  width: 80%;
+
+  border: solid black 5px;
+  border-radius: 5px;
+}
+
+.category-title {
+  text-align: center;
+
+  border-bottom: solid black 5px;
+}
