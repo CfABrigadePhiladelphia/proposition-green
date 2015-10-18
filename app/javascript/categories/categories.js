@@ -14,36 +14,36 @@ angular.module('propGreen.categories', ['ngRoute', 'propGreen.requests'])
   {
     name: 'Emergency Preparedness',
     key: 'emergency',
-    desc: 'Lorem espom salt'
+    desc: 'Regionally based Ideas, proposals and projects on how to address Emergency Response needs created by Climate Change.'
   },
   {
     name: 'Food',
     key: 'food',
-    desc: 'Lorem espom salt'
+    desc: 'Ideas, proposals and projects specific to the Region on addressing needs created by the impact of Climate Change on Food production.'
   },
   {
     name: 'Water',
     key: 'water',
-    desc: 'Lorem espom salt'
+    desc: 'Ideas, proposals and projects specific to the Region on addressing needs created by the impact of Climate Change on Water.'
   },
   {
     name: 'Air',
     key: 'air',
-    desc: 'Lorem espom salt'
+    desc: 'Ideas, proposals and projects specific to the Region on addressing needs created by the impact of Climate Change on Air.'
   },
   {
     name: 'Energy',
     key: 'energy',
-    desc: 'Lorem espom salt'
+    desc: 'Ideas, proposals and projects specific to the Region addressing Energy needs created by Climate Change.'
   },
   {
     name: 'Population Displacement',
     key: 'population',
-    desc: 'Lorem espom salt'
+    desc: 'Ideas, proposals and projects specific to the Region on addressing needs created by Population Displacement resulting from Climate Change.'
   },
   {
     name: 'Habitat Impact',
     key: 'habitat',
-    desc: 'Lorem espom salt'
+    desc: 'Ideas, proposals and projects specific to the Region on addressing needs created by the impact of Climate Change on human habitat.'
   }
 ]);
