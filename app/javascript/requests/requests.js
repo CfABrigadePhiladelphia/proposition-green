@@ -1,27 +1,10 @@
-angular.module('propGreen.requests', [])
+angular.module('propGreen.requests', ['ngRoute'])
 
-.service('RequestsService', ['$q', function($q) {
-  return {
-    getRequests: function(category_key) {
-      var deferred = $q.defer();
-
-      console.log('Getting requests for category:', category_key);
-      deferred.resolve([
-        {
-          title: 'Clean park',
-          desc: 'Halp',
-          needs: ['shovel', 'trash bags']
-        },
-        {
-          title: 'Shut down Comcast',
-          desc: 'They are evil',
-          needs: ['free internet']
-        }
-      ]);
-
-      return deferred.promise;
-    }
-  };
+.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/requests/:request', {
+    templateUrl: 'javascript/requests/request.html',
+    controller: 'RequestController'
+  });
 }])
 
 .directive('requests', function() {
@@ -33,11 +16,4 @@ angular.module('propGreen.requests', [])
       category: '='
     }
   };
-})
-
-.controller('RequestsController',
-['$scope', 'RequestsService', function($scope, service) {
-  service.getRequests($scope.category.key).then(function(requests) {
-    $scope.requests = requests;
-  });
-}]);
+});

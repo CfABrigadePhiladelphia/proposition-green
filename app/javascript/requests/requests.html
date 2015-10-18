@@ -13,7 +13,7 @@
     </tr>
   </thead>
 
-  <tr ng-repeat="request in requests">
+  <tr ng-repeat="request in requests" ng-click="openRequest(request)">
     <td>
       {{request.title}}
     </td>
